@@ -16,7 +16,7 @@ There is a couple different methods we can make use of to manipulate strings. Le
 
 ```c++
 #include <iostream>
-#include <string>
+#include <cstring>
 
 using namespace std;
 
