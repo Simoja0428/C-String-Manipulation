@@ -13,3 +13,25 @@ In order to access the methods to manipulate a String, you need to make sure tha
 
 ## Manipulating String values
 There is a couple different methods we can make use of to manipulate strings. Lets do an example to see. What if we wanted to add two strings together and then make a copy of this new string. Before finally printing out the length of the new string and its copy? As complicated as this sounds, this can be easily done using some different string methods. See the following example below:
+
+```c++
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(int argc,  char* argv[])
+{
+  string name1 = "jacob";
+  string name2 = "benito";
+  string holdCopy;
+  int copyLength;
+  
+  strcat(name1,name2); //Adds name2 on to name1
+  strcpy(holdCopy, name1); //Copies name1 into the holdCopy
+  copyLength = strlen(holdCopy); //Stores length of copy in copyLength
+  
+  cout << "String Length: " << copyLength << " String Copy: " << holdCopy << endl;
+  return 0;
+ }
+```
