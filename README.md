@@ -22,9 +22,9 @@ using namespace std;
 
 int main(int argc,  char* argv[])
 {
-  String name1 = "jacob";
-  String name2 = "benito";
-  String holdCopy;
+  string name1 = "jacob";
+  string name2 = "benito";
+  string holdCopy;
   int copyLength;
   
   strcat(name1,name2); //Adds name2 on to name1
