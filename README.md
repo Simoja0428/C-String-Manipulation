@@ -33,5 +33,5 @@ int main(int argc,  char* argv[])
   
   cout << "String Length: " << copyLength << " String Copy: " << holdCopy << endl;
   return 0;
- }
+}
 ```
