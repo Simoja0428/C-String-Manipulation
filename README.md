@@ -44,7 +44,7 @@ String Length: 11 String Copy: jacobbenito
 ```
 
 ## Case Sensitive
-If theres anything you take away from this regarding strings and cstrings, it should be that they are ```bold CASE SENSITIVE```. The value of a capital letter is not the same as the value of a lower case letter. In order to get around this, a common method is to convert your string you are comparing to all capitals or lowercase. The following example below shows how this is commonly done:
+If theres anything you take away from this regarding strings and cstrings, it should be that they are ```CASE SENSITIVE```. The value of a capital letter is not the same as the value of a lower case letter. In order to get around this, a common method is to convert your string you are comparing to all capitals or lowercase. The following example below shows how this is commonly done:
 
 ```c++
 #include <iostream>
