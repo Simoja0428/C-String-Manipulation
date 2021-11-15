@@ -42,3 +42,30 @@ The following displays the output of the program above:
 ```terminal
 String Length: 11 String Copy: jacobbenito
 ```
+
+## Case Sensitive
+If theres anything you take away from this regarding strings and cstrings, it should be that they are ```bold CASE SENSITIVE```. The value of a capital letter is not the same as the value of a lower case letter. In order to get around this, a common method is to convert your string you are comparing to all capitals or lowercase. The following example below shows how this is commonly done:
+
+```c++
+#include <iostream>
+#include <algorithm> //Needed for transform() method
+#include <string>
+
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+  string value = "AlPhA";
+  string comparison = "alpha";
+  
+  if (value == comparison)
+    cout << "This does not run because the case is not the same" << endl;
+  
+  transform(value.begin(), value.end(), value.begin(), ::tolower); //This method is used to convert the string to lower case
+  
+  if (value == comparison)
+    cout << "Now this runs as value is all lower case" << endl;
+    
+  return 0;
+}
+```
